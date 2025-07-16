@@ -4,7 +4,7 @@ workflows:
     max_build_duration: 20
     environment:
       vars:
-        JAVA_HOME: /opt/android/java/openjdk
+        JAVA_HOME: /usr/lib/jvm/java-11-openjdk
     scripts:
       - name: Build APK
         script: |
