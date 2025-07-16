@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <TextView android:id="@+id/status"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Status: ..." />
+
+  <RadioButton android:id="@+id/radioYes"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YES" />
+
+  <RadioButton android:id="@+id/radioNo"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NO" />
+
+  <Button android:id="@+id/btnInject"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Executar" />
+
+</LinearLayout>
