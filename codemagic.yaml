@@ -6,6 +6,8 @@ workflows:
       vars:
         PACKAGE_NAME: "com.gzimhub.wallhackinjectshizuku"
     scripts:
+      - name: Give execute permission to gradlew
+        script: chmod +x ./gradlew
       - name: Build APK
         script: ./gradlew assembleDebug
     artifacts:
