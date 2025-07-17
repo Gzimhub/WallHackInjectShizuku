@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_dark">#333333</color>   <!-- fundo cinza escuro -->
+    <color name="white">#FFFFFF</color>        <!-- cor branca para texto e botão -->
+    <color name="red">#FF0000</color>          <!-- vermelho para botão ativo -->
+</resources>
