@@ -2,20 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_dark">
 
-  <TextView android:id="@+id/status"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:text="Status: ..." />
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: ..."
+        android:textColor="@color/white" />
 
-  <RadioButton android:id="@+id/radioYes"
-    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YES" />
+    <RadioButton
+        android:id="@+id/radioYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:textColor="@color/white" />
 
-  <RadioButton android:id="@+id/radioNo"
-    android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NO" />
+    <RadioButton
+        android:id="@+id/radioNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:textColor="@color/white" />
 
-  <Button android:id="@+id/btnInject"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:text="Executar" />
+    <Button
+        android:id="@+id/btnInject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executar"
+        android:background="@drawable/button_background"
+        android:textColor="@color/gray_dark" />
 
 </LinearLayout>
