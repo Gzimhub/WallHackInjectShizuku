@@ -1,18 +1,7 @@
 plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
+    id 'com.android.application' version '8.1.0' apply false
 }
 
-android {
-    compileSdkVersion 33
-    defaultConfig {
-        applicationId "com.example.wallhackinjectshizuku"
-        minSdkVersion 21
-        targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
-    }
-}
-dependencies {
-    implementation "rikka.shizuku:api:15.1.1"
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
