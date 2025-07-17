@@ -1,8 +1,6 @@
 workflows:
   build-android:
     name: Build Android APK
-    environment:
-      android: true
     scripts:
       - name: Build Debug APK
         script: |
