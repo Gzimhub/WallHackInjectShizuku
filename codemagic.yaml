@@ -2,7 +2,7 @@ workflows:
   build-android:
     name: Build APK
     environment:
-      android: true
+      sdk: 31
     scripts:
       - name: Give execute permission to gradlew
         script: chmod +x ./gradlew
