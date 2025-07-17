@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Criar botão programaticamente
         val button = Button(this).apply {
             text = "Injetar pasta?"
             setOnClickListener {
@@ -16,15 +17,16 @@ class MainActivity : AppCompatActivity() {
                     .setTitle("Escolha uma opção")
                     .setMessage("Deseja injetar a pasta no APK?")
                     .setPositiveButton("YES") { _, _ ->
-                        // ação para injetar
+                        // Coloque aqui o código para injetar a pasta
                     }
                     .setNegativeButton("NO") { _, _ ->
-                        // ação para remover
+                        // Coloque aqui o código para remover a pasta injetada
                     }
                     .show()
             }
         }
 
+        // Definir o botão como conteúdo da activity
         setContentView(button)
     }
 }
