@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Executar"
         android:background="@drawable/button_background"
-        android:textColor="@color/gray_dark" />
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
