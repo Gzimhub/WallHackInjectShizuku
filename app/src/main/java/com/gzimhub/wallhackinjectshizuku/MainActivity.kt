@@ -2,31 +2,35 @@ package com.gzimhub.wallhackinjectshizuku
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        // Criar botão programaticamente
-        val button = Button(this).apply {
-            text = "Injetar pasta?"
-            setOnClickListener {
-                AlertDialog.Builder(this@MainActivity)
-                    .setTitle("Escolha uma opção")
-                    .setMessage("Deseja injetar a pasta no APK?")
-                    .setPositiveButton("YES") { _, _ ->
-                        // Coloque aqui o código para injetar a pasta
-                    }
-                    .setNegativeButton("NO") { _, _ ->
-                        // Coloque aqui o código para remover a pasta injetada
-                    }
-                    .show()
-            }
+        val injectButton = findViewById<Button>(R.id.injectButton)
+
+        injectButton.setOnClickListener {
+            showInjectDialog()
         }
+    }
 
-        // Definir o botão como conteúdo da activity
-        setContentView(button)
+    private fun showInjectDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Injetar Pasta?")
+            .setMessage("Você deseja injetar ou remover a pasta?")
+            .setPositiveButton("YES") { _, _ ->
+                Toast.makeText(this, "Injetando a pasta...", Toast.LENGTH_SHORT).show()
+                // TODO: Aqui vai a lógica de injeção com Shizuku
+            }
+            .setNegativeButton("NO") { _, _ ->
+                Toast.makeText(this, "Removendo a pasta...", Toast.LENGTH_SHORT).show()
+                // TODO: Aqui vai a lógica de remoção
+            }
+            .show()
     }
 }
