@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray_dark">
-
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Status: ..."
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_marginBottom="20dp" />
-
-    <RadioButton
-        android:id="@+id/radioYes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="YES"
-        android:textColor="@color/white"
-        android:layout_marginBottom="10dp" />
-
-    <RadioButton
-        android:id="@+id/radioNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NO"
-        android:textColor="@color/white"
-        android:layout_marginBottom="20dp" />
+    android:padding="24dp">
 
     <Button
-        android:id="@+id/btnInject"
+        android:id="@+id/injectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Executar"
-        android:background="@drawable/button_background"
-        android:textColor="@color/gray_dark" />
-
+        android:text="Inject/Remove Folder" />
 </LinearLayout>
